@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loader Snipet</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .box{
+                width: 50px;
+                height: 5px;
+                border-radius: 10px;
+                position: relative;
+                animation: anim 4s infinite;
+                background: linear-gradient(to right, #8e2de2, #4a00e0);
+            }
+            .box::before{
+                content: '';
+                position: absolute;
+                top: 50px;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: linear-gradient(to right, #8e2de2, #4a00e0);
+                animation: anim2 2s infinite;
+            }
+            .box::after{
+                content: '';
+                position: absolute;
+                bottom: 50px;
+                right: 0;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: linear-gradient(to right, #8e2de2, #4a00e0);
+                animation: anim3 2s infinite;
+            }
+            @keyframes anim {
+                0%, 100% { transform: rotate(0deg); }
+                50% { transform: rotate(360deg); }
+            }
+            @keyframes anim2 {
+                0%, 100% { transform: translateY(); }
+                50%{
+                    transform: translateY(-45px) translateX(20px);
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+            @keyframes anim3 {
+                0%, 100% { transform: translateY(); }
+                50%{
+                    transform: translateY(45px) translateX(-20px);
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
