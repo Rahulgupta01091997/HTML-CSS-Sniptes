@@ -1,76 +1,89 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Card Hover Snipet</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Poppins', sans-serif;
-            }
-            body{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-            }
-            .card{
-                width: 300px;
-                height: 225px;
-                background: rgb(0, 87, 128);
-                position: relative;
-                border-radius: 20px;
-                cursor: pointer;
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.123);
-            }
-            .card img{
-                position: absolute;
-                width: 100%;
-                border-radius: 10px;
-                height: 100%;
-            }
-            .content{
-                position: absolute;
-                width: 100%;
-                bottom: 0;
-                height: 50px;
-                padding: 0.4em 1.5em;
-                font-size: 14px;
-                background: rgba(255, 255, 255, 0);
-                backdrop-filter: blur(10px);
-                border-radius: 10px;
-                transform: scale(0.9);
-                color: white;
-                border: 1px solid rgba(255, 255, 255, 0.164);
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
-                overflow: hidden;
-                transition: all .4s;
-            }
-            .content p{
-                font-size: 0.8em;
-            }
-            .card:hover .content{
-                height: 150px;
-                overflow-y: auto;
-            }
-            ::-webkit-scrollbar{
-                display: none;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="card">
-            <img src="raina1.png" alt="" />
-            <div class="content">
-                <h2>Suresh Raina</h2>
-                <p>
-                    Believe, Sachin Tendulkar told him - and he took it to heart, getting the word etched on his arm as a tattoo. In this book, Suresh Raina takes us through the challenges he faced as a young cricketer. He was bullied in school and at cricket camps, but he always punched above his weight, overcoming every adversity life threw at him and never giving up. This is the story of the lessons he learnt and the friendships he built. Peppered with invaluable insights - about the game and about life - that Raina acquired from senior colleagues like M.S. Dhoni, Rahul Dravid, Anil Kumble, Sachin Tendulkar and Sourav Ganguly, among others, this book will make you believe in the power of hard work, love, luck, hope and camaraderie. It is a journey through the highs and lows in the cricketing career of a man who saw his world fall apart and yet became one of the most influential white-ball cricketers India has ever seen.
-                </p>
-            </div>
-        </div>
-    </body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Hover Snipet</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .card {
+        width: 300px;
+        height: 225px;
+        background: rgb(0, 87, 128);
+        position: relative;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.123);
+      }
+      .card img {
+        position: absolute;
+        width: 100%;
+        border-radius: 10px;
+        height: 100%;
+      }
+      .content {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        height: 50px;
+        padding: 0.4em 1.5em;
+        font-size: 14px;
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        transform: scale(0.9);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.164);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+        overflow: hidden;
+        transition: all 0.4s;
+      }
+      .content p {
+        font-size: 0.8em;
+      }
+      .card:hover .content {
+        height: 150px;
+        overflow-y: auto;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="raina1.png" alt="" />
+      <div class="content">
+        <h2>Suresh Raina</h2>
+        <p>
+          Believe, Sachin Tendulkar told him - and he took it to heart, getting
+          the word etched on his arm as a tattoo. In this book, Suresh Raina
+          takes us through the challenges he faced as a young cricketer. He was
+          bullied in school and at cricket camps, but he always punched above
+          his weight, overcoming every adversity life threw at him and never
+          giving up. This is the story of the lessons he learnt and the
+          friendships he built. Peppered with invaluable insights - about the
+          game and about life - that Raina acquired from senior colleagues like
+          M.S. Dhoni, Rahul Dravid, Anil Kumble, Sachin Tendulkar and Sourav
+          Ganguly, among others, this book will make you believe in the power of
+          hard work, love, luck, hope and camaraderie. It is a journey through
+          the highs and lows in the cricketing career of a man who saw his world
+          fall apart and yet became one of the most influential white-ball
+          cricketers India has ever seen.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>

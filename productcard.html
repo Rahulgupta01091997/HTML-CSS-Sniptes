@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background: #fff;
+      }
+      .card {
+        width: 25rem;
+        border-radius: 1rem;
+        background: #364f6b;
+        box-shadow: 4px 4px 15px rgba(#000, 0.15);
+        position: relative;
+        color: #434343;
+      }
+      .card .card__container {
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+        background: white;
+        border-radius: 1rem;
+        position: relative;
+        border: 2px solid;
+      }
+      .card .card__header {
+        margin-bottom: 1rem;
+        font-family: "Poppins";
+        color: #ff304f;
+      }
+      .card .card__body {
+        text-align: justify;
+      }
+      .card::before {
+        position: absolute;
+        content: "";
+        top: 2rem;
+        right: -0.5rem;
+        background: #fc5185;
+        height: 28px;
+        width: 28px;
+        transform: rotate(45deg);
+      }
+      .card::after {
+        position: absolute;
+        content: attr(data-label);
+        top: 6px;
+        right: -14px;
+        background: #fc5185;
+        width: 10rem;
+        padding: 0.5rem;
+        color: white;
+        text-align: center;
+        box-shadow: 4px 4px 15px rgba(25, 35, 126, 0.2);
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" data-label="Comming Soon">
+        <div class="card__container">
+          <h1 class="card__header">Believe</h1>
+          <p class="card__body">
+            Believe, Sachin Tendulkar told him - and he took it to heart,
+            getting the word etched on his arm as a tattoo. In this book, Suresh
+            Raina takes us through the challenges he faced as a young cricketer.
+            He was bullied in school and at cricket camps, but he always punched
+            above his weight, overcoming every adversity life threw at him and
+            never giving up
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
